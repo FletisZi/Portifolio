@@ -29,6 +29,7 @@ a{
     font-weight: 600;
     color: #fff;
     margin-right: 1rem;
+    transition: transform 0.4s;
 
 }
 
@@ -39,6 +40,7 @@ a:before{
     height: 10px;
     margin-right: 10px;
     vertical-align: middle;
+    
 }
 #botao{
     display: inline-block;
@@ -46,21 +48,29 @@ a:before{
     padding: 18 20px;
     box-shadow: 5px 4px black;
     margin-right: 0;
+    transition: transform 1s;
 
 }
 
 #botao:hover{
     background-color: #e07081;
+    transform: scale(1.08);
+    
+}
+a:hover{
+    transform: scale(1.08);
     
 }
 
 @media only screen 
-and (max-width : 580px) {
+and (max-width : 800px)
+and (min-width : 530px) {
     header{
         display: block;
         text-align: center;
     }
     nav{
+        margin-top: 2rem;
         text-align: center;
     }
     a{
